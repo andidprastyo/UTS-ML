@@ -31,7 +31,7 @@ Berdasarkan pemaparan kasus, Anda diminta untuk,
 ### Bima Bayu Saputra
 
 **Citra Plat Original:**
-![alt text](UTS_Bima/docs/original.png)
+![alt text](UTS_Bima/docs/Original.png)
 
 Menggunakan 3 jenis preprocessing yang berbeda yaitu:
 
