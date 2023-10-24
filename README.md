@@ -154,4 +154,4 @@ def calculate_levenshtein_distance(ground_truth, recognized_text):
 
 ![alt text](UTS_Bima/docs/eval1.png)
 
-![alt text](UTS_Bima/docs/evalE5234YF.png)
+![alt text](UTS_Bima/docs/evalE3083PAH.png)
