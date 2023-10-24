@@ -53,7 +53,7 @@ hsv_images = [cv2.cvtColor(img, cv2.COLOR_RGB2HSV) for img in original_images]
 #### Mereduksi citra menggunakan PCA
 
 ```python
-# Pra-pemrosesan: Reduksi dimensi menggunakan PCA
+# Reduksi dimensi menggunakan PCA
 pca = PCA(n_components=3)
 reduced_images = [pca.fit_transform(img.reshape((-1, 3))).reshape(img.shape) for img in original_images]
 ```
