@@ -155,3 +155,58 @@ def calculate_levenshtein_distance(ground_truth, recognized_text):
 ![alt text](UTS_Bima/docs/eval1.png)
 
 ![alt text](UTS_Bima/docs/evalE3083PAH.png)
+
+
+## Segmentasi dari Berbagai Plat Nomer - Lailatul Badriyah
+
+### Menampilkan Citra Plat Nomor
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/original-image.png)
+
+### Melihat Dimensi Citra Pertama
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/dimensi-citra.png)
+
+### Normalisasi Data Citra Pertama
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/normalisasi-citra.png)
+
+### Plot Distribusi Warna Piksel-Piksel dalam Citra
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/plot-pixels.png)
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-plot.png)
+
+### Segmentasi Citra Menggunakan Algoritma K-Means
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/segmentasi-kmeans.png)
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-kmeans.png)
+
+### Konversi Hasil Segmentasi K-Means Ke Biner Image
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/konversi-biner.png)
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-biner.png)
+
+Untuk empat gambar lainnya, prosesnya sama seperti di atas. Berikut saya sertakan hasil segmentasinya:
+
+### Citra ke-2
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-2.png)
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-biner-2.png)
+
+### Citra ke-3
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-1.png)
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-biner-1.png)
+
+### Citra ke-4
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-3.png)
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-biner-3.png)
+
+### Citra ke-5
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-4.png)
+
+![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-biner-4.png)
