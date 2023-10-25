@@ -26,9 +26,7 @@ Berdasarkan pemaparan kasus, Anda diminta untuk,
 - Proses loading citra dicontohkan dengan menggunakan library openCV
 - Secara default, openCV akan memuat citra dalam format BGR
 
-## Hasil Segmentasi dari Berbagai Plat Nomer
-
-### Bima Bayu Saputra
+## Hasil Segmentasi dari Berbagai Plat Nomer - Bima Bayu Saputra
 
 **Citra Plat Original:**
 ![alt text](UTS_Bima/docs/Original.png)
@@ -39,7 +37,7 @@ Menggunakan 3 jenis preprocessing yang berbeda yaitu:
 - Mereduksi citra menggunakan PCA
 - Menggunakan Gaussian Blur dan Thresholding
 
-#### Mengubah color space menjadi HSV
+### Mengubah color space menjadi HSV
 
 ```python
 # Konversi ke ruang warna HSV
@@ -50,7 +48,7 @@ hsv_images = [cv2.cvtColor(img, cv2.COLOR_RGB2HSV) for img in original_images]
 
 ![alt text](UTS_Bima/docs/hsv.png)
 
-#### Mereduksi citra menggunakan PCA
+### Mereduksi citra menggunakan PCA
 
 ```python
 # Reduksi dimensi menggunakan PCA
@@ -62,7 +60,7 @@ reduced_images = [pca.fit_transform(img.reshape((-1, 3))).reshape(img.shape) for
 
 ![alt text](UTS_Bima/docs/pca.png)
 
-#### Menggunakan Gaussian Blur dan Thresholding
+### Menggunakan Gaussian Blur dan Thresholding
 
 ```python
 # Mengubah citra ke grayscale
@@ -75,7 +73,7 @@ preprocessed_images = [cv2.threshold(cv2.GaussianBlur(img, (5, 5), 0), 0, 255, c
 
 ![alt text](UTS_Bima/docs/ts.png)
 
-#### Melakukan Segmentasi dengan K-Means
+### Melakukan Segmentasi dengan K-Means
 
 ```python
 # K-Means untuk citra rgb
@@ -119,11 +117,11 @@ segmented_images_pca = [kmeans_segmentation_color(img, 2) for img in reduced_ima
 segmented_images_ts = [kmeans_segmentation_gray(img, 2) for img in preprocessed_images]
 ```
 
-#### Perbandingan Plat Asli dan Hasil Segementasi
+### Perbandingan Plat Asli dan Hasil Segementasi
 
 ![alt text](UTS_Bima/docs/hasil.png)
 
-#### Melakukan Evaluasi (Challenge )
+### Melakukan Evaluasi (Challenge )
 
 ```python
 # Fungsi untuk menghitung akurasi pengenalan karakter
