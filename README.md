@@ -29,6 +29,7 @@ Berdasarkan pemaparan kasus, Anda diminta untuk,
 ## Hasil Segmentasi dari Berbagai Plat Nomer - Bima Bayu Saputra
 
 **Citra Plat Original:**
+
 ![alt text](UTS_Bima/docs/Original.png)
 
 Menggunakan 3 jenis preprocessing yang berbeda yaitu:
