@@ -1,6 +1,6 @@
 # UTS Machine Learning - Kelompok 1
 
-**Anggota Kelompok :** 
+**Anggota Kelompok :**
 
 1. 2141720185 - Adam Rafi Rezandi
 2. 2141720003 - Tio Misbaqul Irawan
@@ -16,9 +16,9 @@ Berdasarkan pemaparan kasus, Anda diminta untuk,
 2. Lakukan segmentasi pada citra plat nomor untuk memperjelas karakter pada plat nomor.
 3. Anda dapat menggunakan algortima K-Means seperti yang telah dijelaskan pada praktikum sebelumnya atau menggunakan algoritma klasterisasi yang lain.
 4. Anda diperkenankan untuk melakukan pra pengolahan data (preprocessing) pada citra seperti,
-	- Merubah color space
-	- Reduksi dimensi
-	- dsb
+   - Merubah color space
+   - Reduksi dimensi
+   - dsb
 5. Tampilkan perbandingan citra antara sebelum dan sesudah di segmentasi
 
 **Catatan:**
@@ -154,7 +154,6 @@ def calculate_levenshtein_distance(ground_truth, recognized_text):
 
 ![alt text](UTS_Bima/docs/evalE3083PAH.png)
 
-
 ## Segmentasi dari Berbagai Plat Nomer - Lailatul Badriyah
 
 ### Menampilkan Citra Plat Nomor
@@ -190,21 +189,25 @@ def calculate_levenshtein_distance(ground_truth, recognized_text):
 Untuk empat gambar lainnya, prosesnya sama seperti di atas. Berikut saya sertakan hasil segmentasinya:
 
 ### Citra ke-2
+
 ![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-2.png)
 
 ![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-biner-2.png)
 
 ### Citra ke-3
+
 ![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-1.png)
 
 ![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-biner-1.png)
 
 ### Citra ke-4
+
 ![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-3.png)
 
 ![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-biner-3.png)
 
 ### Citra ke-5
+
 ![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-4.png)
 
 ![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-biner-4.png)
@@ -216,3 +219,108 @@ Untuk empat gambar lainnya, prosesnya sama seperti di atas. Berikut saya sertaka
 # Penggunaan Thresholding - Andi
 
 ![alt text](./UTS%20-%20Andi/Thresholding.png)
+
+## Hasil Segmentasi dari Berbagai Plat Nomer - Adam Rafi Rezandi
+
+### Citra Plat Original
+
+Plat Nomor 1
+![alt text](./UTS_Adam/data/img1.jpg)
+
+Plat Nomor 2
+![alt text](./UTS_Adam/data/img2.jpg)
+
+Plat Nomor 3
+![alt text](./UTS_Adam/data/img3.jpg)
+
+Plat Nomor 4
+![alt text](./UTS_Adam/data/img4.jpg)
+
+Plat Nomor 5
+![alt text](./UTS_Adam/data/img5.jpg)
+
+### Citra Plat Setelah di Preprocessing
+
+Plat Nomor 1
+![alt text](./UTS_Adam/output/results/result1.png)
+
+Plat Nomor 2
+![alt text](./UTS_Adam/output/results/result2.png)
+
+Plat Nomor 3
+![alt text](./UTS_Adam/output/results/result3.png)
+
+Plat Nomor 4
+![alt text](./UTS_Adam/output/results/result4.png)
+
+Plat Nomor 5
+![alt text](./UTS_Adam/output/results/result5.png)
+
+### Citra Plat dengan kotak bounding box
+
+Plat Nomor 1
+![alt text](./UTS_Adam/output/boundeds/bounded1.png)
+
+Plat Nomor 2
+![alt text](./UTS_Adam/output/boundeds/bounded2.png)
+
+Plat Nomor 3
+![alt text](./UTS_Adam/output/boundeds/bounded3.png)
+
+Plat Nomor 4
+![alt text](./UTS_Adam/output/boundeds/bounded4.png)
+
+Plat Nomor 5
+![alt text](./UTS_Adam/output/boundeds/bounded5.png)
+
+### Hasil Evaluasi
+
+```
+Plate 1
+Pixel Accuracy: 0.8391571428571428
+Jaccard Index: 0.12823786081620722
+Dice Coefficient: 0.22732415791016874
+
+Plate 2
+Pixel Accuracy: 0.8443214285714286
+Jaccard Index: 0.12984158322379624
+Dice Coefficient: 0.22984033363919398
+
+Plate 3
+Pixel Accuracy: 0.8319928571428571
+Jaccard Index: 0.10979663216709379
+Dice Coefficient: 0.1978680219144196
+
+Plate 4
+Pixel Accuracy: 0.7854071428571429
+Jaccard Index: 0.1768293095145211
+Dice Coefficient: 0.3005181942442761
+
+Plate 5
+Pixel Accuracy: 0.8196571428571429
+Jaccard Index: 0.18755117749172973
+Dice Coefficient: 0.31586205469959355
+```
+
+### Percobaan Recognition dengan Pytessearct
+
+```Plate 1 : BE 2775 U
+
+Ground 1 : BE 2775 U
+Seberapa mirip: 1.0
+Plate 2 : BE 7/179 U
+
+Ground 2 : BE 7775 U
+Seberapa mirip: 0.7368421052631579
+Plate 3 : BE Q775 U
+
+Ground 3 : BE 9775 U
+Seberapa mirip: 0.8888888888888888
+Plate 4 :
+Ground 4 : BG 1980 A
+Seberapa mirip: 0.0
+Plate 5 : BM 3095 Vy
+
+Ground 5 : BM 3095 V
+Seberapa mirip: 0.9473684210526315
+```
