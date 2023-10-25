@@ -208,3 +208,11 @@ Untuk empat gambar lainnya, prosesnya sama seperti di atas. Berikut saya sertaka
 ![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-4.png)
 
 ![alt text](Lailatul%20Badriyah%20-%20UTS/docs/hasil-segmentasi-biner-4.png)
+
+# Segmentasi Gambar Menggunakan K-Means Clustering - Andi
+
+![alt text](./UTS%20-%20Andi/KMeans.png)
+
+# Penggunaan Thresholding - Andi
+
+![alt text](./UTS%20-%20Andi/Thresholding.png)
